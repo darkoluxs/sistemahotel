@@ -9,7 +9,10 @@ use View;
 
 class ClienteController extends Controller
 {
-    public function index(){
+    public function cliente(){
     	return View::make('serviciocliente.consumo');
+    }
+    public function reservas(){
+    	return View::make('serviciocliente.reservas');
     }
 }

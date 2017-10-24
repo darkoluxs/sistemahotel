@@ -11,4 +11,6 @@
 |
 */
 Route::get(' ','HomeController@index');
-Route::get('serviciocliente/consumo','ClienteController@index');
+Route::get('serviciocliente/consumo','ClienteController@cliente');
+Route::get('serviciocliente/reservas' ,'ClienteController@reservas');
+Route::get('empleados/empleados', 'EmpleadosController@empleados');

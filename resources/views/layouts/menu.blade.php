@@ -15,14 +15,17 @@
         <li>
           Servicio al cliente <i class="fa fa-sort-desc" aria-hidden="true"></i>
           <ul>
-            <li>Reservas</li>
+            <li> <a href="serviciocliente/reservas"> Reservas </a> </li>
             <li>Servicios</li>
             <li><a href="serviciocliente/consumo"> Consumos </a> </li>
           </ul>
         </li>
-        <li>Empleados</li>
+        <li> Empleados </li>
         <li>Clientes</li>
         <li>Factura</li>
+      </ul>
+      <ul>
+        <li>Habitaciones</li>
       </ul>
     </div>
   </div>
