@@ -20,7 +20,7 @@
             <li><a href="serviciocliente/consumo"> Consumos </a> </li>
           </ul>
         </li>
-        <li> Empleados </li>
+        <li>Empleados </li>
         <li>Clientes</li>
         <li>Factura</li>
       </ul>
