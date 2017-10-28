@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class EmpleadosController extends Controller
+class FacturasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class EmpleadosController extends Controller
      */
     public function index()
     {
-        //
+        return view('facturas.facturas');
     }
 
     /**

@@ -1,33 +1,52 @@
 <html>
 <head>
-  <title></title>
-
 <link rel="stylesheet" type="text/css" href="{{'assets/css/menu.css'}}">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-     rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
-<div class="container">
   <div class="row">
-    <div class="dropdown">
-      <ul>
-        <li>Inicio</li>
-        <li>
-          Servicio al cliente <i class="fa fa-sort-desc" aria-hidden="true"></i>
-          <ul>
-            <li> <a href="serviciocliente/reservas"> Reservas </a> </li>
-            <li>Servicios</li>
-            <li><a href="serviciocliente/consumo"> Consumos </a> </li>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand visible-xs-inline-block nav-logo" href="/"><img src="/images/logo-dark-inset.png" class="img-responsive" alt=""></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav js-nav-add-active-class">
+            <li><a href="">Inicio</a></li>
+            <li><a href="/habitaciones">Habitaciones</a></li>
+            <li><a href "/empleados"=>Empleados</a></li>
+            <li><a href="/facturas">Facturas</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/clientes">Clientes   </a></li>
+            <!--<li class="visible-xs-block"><a href="">About Us</a></li>
+            <li class="visible-xs-block"><a href="">Careers</a></li>
+            <li class="visible-xs-block"><a href="">Press Release</a></li>
+            <li class="visible-xs-block"><a href="">Cerrar s</a></li> -->
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Servicio al cliente <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" id="desplegar">
+                <li><a href="/Reservas">Reservas</a></li>
+                <li id="tip1"><a href="">Servicio a la habitacion</a></li>
+                <li><a href="/consumos">Consumos</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li>Empleados </li>
-        <li>Clientes</li>
-        <li>Factura</li>
-      </ul>
-      <ul>
-        <li>Habitaciones</li>
-      </ul>
-    </div>
+          <ul class="nav navbar-nav navbar-right hidden-xs">
+            <a type="button" class="navbar-btn btn btn-gradient-blue" am-latosans="bold">Cerrar Sesion</a>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
   </div>
 </div>
 </body>

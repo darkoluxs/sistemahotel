@@ -16,6 +16,7 @@ class ComposerStaticInit51742529f898baa3fda79178455cbc32
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '752af1c2bdb339e8474c3c31b22b7d54' => __DIR__ . '/..' . '/illuminate/html/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -67,6 +68,7 @@ class ComposerStaticInit51742529f898baa3fda79178455cbc32
         ),
         'I' => 
         array (
+            'Illuminate\\Html\\' => 16,
             'Illuminate\\' => 11,
         ),
         'F' => 
@@ -192,6 +194,10 @@ class ComposerStaticInit51742529f898baa3fda79178455cbc32
         'League\\Flysystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
+        ),
+        'Illuminate\\Html\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/html',
         ),
         'Illuminate\\' => 
         array (
