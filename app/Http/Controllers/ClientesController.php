@@ -16,7 +16,7 @@ class ClientesController extends Controller
      */
     public function index()
     {
-        return view('clientes.clientes')->with('clientes');
+        return view('clientes.clientes');
     }
 
     /**
@@ -26,7 +26,7 @@ class ClientesController extends Controller
      */
     public function create()
     {
-        return view('clientes.clientes');
+        //
     }
 
     /**
@@ -37,30 +37,7 @@ class ClientesController extends Controller
      */
     public function store(Request $request)
     {
-        $messages=[
-            'cli_name.required'=>'El nombre es requerido',
-            'cli_apellido.required'=>'El apellido es requerido',
-            'cli_email.required'=>'El email es requerido',
-            'cli_email.unique'=>'El email ya está en uso',
-            'cli_telefono.required'=>'El telefono es requerido',
-        ];
-
-        $this->validate($request,[
-            'cli_name'=>'required',
-            'cli_apellido'=>'required',
-            'cli_email'=>'required|unique:clientes',
-            'cli_telefono'=>'required',
-        ],$messages);
-
-
-        $cliente=new Cliente;
-        $cliente->cli_name=$request->input('cli_name');
-        $cliente->cli_apellido=$request->input('cli_apellido');
-        $cliente->cli_email=$request->input('cli_email');
-        $cliente->cli_telefono=$request->input('cli_telefono');
-
-        return redirect('clientes')->with('success','Cliente Guardado');
-
+        //
     }
 
     /**
@@ -82,8 +59,7 @@ class ClientesController extends Controller
      */
     public function edit($id)
     {
-        $cliente = Cliente::find($id);
-        return view('cliente.edit_cliente')->with('cliente', $clientes)
+        //
     }
 
     /**
@@ -95,33 +71,7 @@ class ClientesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
-         $messages=[
-            'cli_name.required'=>'El nombre es requerido',
-            'cli_apellido.required'=>'El apellido es requerido',
-            'cli_email.required'=>'El email es requerido',
-            'cli_email.unique'=>'El email ya está en uso',
-            'cli_telefono.required'=>'El telefono es requerido',
-        ];
-
-        $this->validate($request,[
-            'cli_name'=>'required',
-            'cli_apellido'=>'required',
-            'cli_email'=>'required|unique:clientes',
-            'cli_telefono'=>'required',
-        ],$messages);
-
-
-        $cliente=new Cliente::find($id)
-        $cliente->cli_name=$request->input('cli_name');
-        $cliente->cli_apellido=$request->input('cli_apellido');
-        $cliente->cli_email=$request->input('cli_email');
-        $cliente->cli_telefono=$request->input('cli_telefono');
-
-        return redirect('clientes')->with('success','Cliente Actualizado');
-
-
-
+        //
     }
 
     /**
@@ -132,10 +82,6 @@ class ClientesController extends Controller
      */
     public function destroy($id)
     {
-        $cliente = Cliente::find($id);
-
-        $cliente->delete();
-
-        return redirect('/empleados')->with('success', 'Empleado borrado');
+        //
     }
 }

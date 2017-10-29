@@ -15,6 +15,6 @@ Route::resource('','HomeController');
 Route::resource('reservas' ,'ReservasController');
 Route::resource('empleados', 'EmpleadosController');
 Route::resource('habitaciones', 'HabitacionesController');
-Route::resource('clientes', 'ClientesController');
 Route::resource('facturas', 'FacturasController');
 Route::resource('servicios', 'ServiciosController');
+Route::resource('clientes', 'ClientesController');
