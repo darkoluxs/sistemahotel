@@ -13,7 +13,7 @@
 }
 
 .navbar .navbar-nav > li > a {
-  color: #d1d1d1;
+  color: #d1d2d2;
   font-weight: 700;
   text-rendering: optimizeLegibility;
   text-shadow: 0px -1px black, 0px 1px rgba(255, 255, 255, 0.25);
@@ -24,7 +24,7 @@
   color: #f8f8f8;
   background-color: #080808;
   box-shadow: inset 0px -28px 23px -21px rgba(255, 255, 255, 0.15);
-  border-left: 1px solid #2A2A2A;
+  border-left: 3px solid #2A2A2A;
   border-right: 1px solid #272727
 }
 

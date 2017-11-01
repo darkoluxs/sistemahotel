@@ -9,6 +9,6 @@ use App\Http\Requests;
 class HomeController extends Controller
 {
     public function index(){
-    	return View('layouts.menu');
+    	return View('inicio.inicio');
     }
 }
