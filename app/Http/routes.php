@@ -18,4 +18,4 @@ Route::resource('empleados', 'EmpleadosController');
 Route::resource('habitaciones', 'HabitacionesController');
 Route::resource('facturas', 'FacturasController');
 Route::resource('servicios', 'ServiciosController');
-Route::resource('clientes', 'ClientesController');
+Route::resource('clientes', 'ClientesController@index');

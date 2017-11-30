@@ -15,3 +15,8 @@ class Habitacion extends Model
     protected $fillable =['hab_id', 'hab_tip', 'hab_num', 'hab_cp'];
     
 }
+
+pulic function Cliente ()
+{
+	return $this->belongsTo('App\Cliente');
+}

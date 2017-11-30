@@ -58,7 +58,7 @@ return [
             'port' => '',
             'database' => 'sistemahotel',
             'username' => 'root',
-            'password' => '154487369lfa',
+            'password' => '',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
